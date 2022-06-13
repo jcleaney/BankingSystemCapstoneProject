@@ -1,71 +1,27 @@
-# Compiling and Running Java Programs
+# General Information
+This repository includes my most recent work doing a capstone project in my Senior Year at Loyola University New Orleans (Class of '22). It is a project that encapsulates all of the primary skills that I have and I believe demonstrates my abilities to layout the groundwork for software projects. In order to have this demo example work on your laptop for review please follow along with the instructions.txt file at the top level of the repository.
 
-## <u>**General Overview**</u>
-These are the instructions for setting up, compiling, building, running, and debugging Java programs per platform. The settings included in this repo should work on any computer with Visual Studio Code. You will also need to have the proper compilers and debuggers installed (see below). These instructions assume the default directories for the compilers.
+# Goal of the Project
+The goal of the project was to build a web-based application that interacted with a database to perform a variety of operations pertaining to the behaviors of a bank and their clients accounts. Here is a list of skills and their descriptions that I was judged on:
 
+- A fresh clone has a pre-identified file or files with instructions for how to proceed
+- Clean one-command build (i.e. A single command identified in the instructions will run successfully on Windows and on MacOS leaving the entire system running)
+- Login to database server (i.e. login to database server (i.e. tester can perform a command on the test system that logs in to mysql and demonstrates execution of the SQL command “select sysdate();”)
+- Can display a HTML page ( tester can open a browser window to the Tomcat server and show an html page)
+- Login via servlet (i.e. A tester can enter credentials to log in to the database and receive a confirmation page)
+- db query showing prefills (i.e. A tester can connect to the banking database and issue queries (at least two) showing the accounts and transactions for a banking user
+- A page demonstrates bank accounts pre-filled for the logged-in user
+- A page demonstrates pre-filled transaction list on an previously configured account
+- A tester can create a transaction that withdraws money from one account to another
+- A tester can issue a command to create a new banking customer with username and password
+- A newly-created customer can successfully log in
+- A customer can create a new bank account
 
-## <u>**Using VSC**</u>
-Installation instructions for specific platforms are found in the subsequent sections. These next steps assume you have VSC and your compiler installed.
+# Further Description
+For the project the main deeback and demands made ot me as an individual came from my supervising professor or as a request from an external source. This project was largely unassisted and was in fact treated as an agile development as features were requested and worked on but within the time frame they were removed due to the increased level of awareness of our timeline for the project. The only primary feature that was left out was the credit score checker as it had an algorithm too complicated to actually design as we were not able to request furhter information from a real broker.
 
-1. Open up the workspace using the file `_LaunchThis.code-workspace`. This should open up VSC as a workspace with all of the necessary settings. If the file type is not already associated with VSC, do so.
-1. Create a new, blank file (`File->New File`) from VSC. 
-1. Compile and run by hitting `[Ctrl]+[Shift]+B` on Windozzze or `[command]+[shift]+B` on Mac. You can also just use the menu `Terminal->Run Build Task...`. Select `Build and Run C/C++ Application`.
-1. To debug, you can select `[F5]` or the menu `Debug->Start Debugging`.
+# Primary skills demonstrated
+This project demonstrates that SQL Relational Database management, Docker, Servlets and HTML/CSS, JDBC, JUnit, Bash Shell Scripting, object-oriented Java implementations, among other skills are my primary strengths. I have the ability to pick up new skills fast. Time permitting and with decent training the level of quality that this project would have had would have been to another level. 
 
-> <b><u>File Names</u></b><br>
-> All files MUST be named correctly as the assignment instructions dictate. This includes spacing (don't use any!), capitalization, name of the file, and the correct extensions (`.java`). Major points will be taken off for incorrect file names and/or missing files. 
->
-> <b><u>Header Information</u></b><br>
-> Please include all requested documents for this assignment in this repository. Each file MUST include a `COMMENT AREA` near the top of the page. The comment area must include the following three lines. All assignments for the remainder of this course must contain a variation of the following three lines. You will need to fill in the bracketed sections with the appropriate information (without the square brackets).
-> ```
-> Project Name: [Title of the Project]
-> Author: [Your Full Name]
-> Date Last Modified: [Date Modified]
-> ```
-
----
-
-## <u>**Installing (do these once)**</u>
-### <u>General Installation (all platforms)</u>
-#### Install Visual Studio Code ( https://code.visualstudio.com/ )
-1. Go to the website above. Download and install the version appropriate to your computer.
-1. The first time you launch VSC, it will probably try to install a few plugins for handling cpp files. This is good! If it needs a little push, you can start the plugin manager (`[command or Ctrl]+[Shift]+X`) and install `C/C++ for Visual Studio Code`.
-1. Generally, you will start projects using the file `_LaunchThis.code-workspace`. This should open up VSC as a workspace with all of the necessary settings. If this file type is not already associated with VSC, do so.
-
----
-
-#### Install Java JDK ( https://adoptopenjdk.net/?variant=openjdk11&jvmVariant=hotspot )
-
-1. Go to the link above to find Java JDK. There are other versions of Java out there, but this will work the easiest.
-1. Select `OpenJDK 11 (LTS)`.
-1. Click the `Latest release` button.
-1. Choose your platform (e.g. `Windows x64` or `macOS x64`).
-1. Click `Install JDK` and download and install Java. Use the default settings.
-
----
-
-### <u>Linux (Raspbian) Installation Specifics</u>
-
-#### Install Visual Studio Code (Code-OSS)
-1. If you've previously installed `code-oss` andit is not working properly (installs other than version 1.29), you'll need to purge it prior to starting:
-    ```{bash}
-    sudo apt-get purge code-oss
-    ```
-1. Download GPG signing key from PackageCloud: [https://packagecloud.io/headmelted/codebuilds/gpgkey](https://packagecloud.io/headmelted/codebuilds/gpgkey)
-1. Import GPG key
-    ```{bash}
-    gpg --import /home/pi/Downloads/headmelted-code-oss-0CC3FD642696BFC8.pub.gpg
-    gpg --list-keys
-     ```
-1. Install the PackageCloud repository for code-oss
-    ```{bash}
-    curl -s https://packagecloud.io/install/repositories/headmelted/codebuilds/script.deb.sh | sudo bash
-    ```
-1. Install code-oss
-    ```{bash}
-    sudo apt-get install code-oss=1.29.0-1539702238
-    ```
-1. Tell `apt` to hold at version 1.29, since 1.32 doesn't work properly
-    ```{bash}
-    sudo apt-mark hold code-oss
-    ```
+# Requirements 
+As far as I am aware, the only limitation that affects this application from launching in its proper state is whether or not the JDK version for the terminal is the same as the one in your version of Docker. A number of applications were required to develop this tool. Visual Studio Code was used as the primary editor. Git Bash was for the primary terminal. Docker was required to host and run the contianers properly. Further instructions provided.
