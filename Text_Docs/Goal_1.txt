@@ -1,0 +1,4 @@
+Goal 1:  The must make an account with us.
+(In order to make transactions a user must first be able to create an account with a (unique) username and password and email.
+(potentially other info) The must make an account with us.)
+

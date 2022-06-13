@@ -1,0 +1,22 @@
+body
+{
+margin:0;
+padding: 0;
+animation: bgcolor infinite 20s;
+text-align: center;
+line-height: 2;
+font-family: "MerriWeather", serif;
+font-size: 200%;
+color: #40514e;
+}
+
+
+div
+{
+   background-color: teal; 
+}
+
+h2
+{
+    color: black;
+}

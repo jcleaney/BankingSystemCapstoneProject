@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>6afd7624-cddb-4b78-b988-da7ac3b2a874.TABLE:postgres.SoftwareEngineeringBankSystem.account_types</OriginalElement>
+  <nodes>
+    <node x="87.75" y="283.0">6afd7624-cddb-4b78-b988-da7ac3b2a874.TABLE:postgres.SoftwareEngineeringBankSystem.user_accounts</node>
+    <node x="342.24779101037257" y="198.1490587783327">6afd7624-cddb-4b78-b988-da7ac3b2a874.TABLE:postgres.SoftwareEngineeringBankSystem.account_types</node>
+    <node x="58.75" y="500.0">6afd7624-cddb-4b78-b988-da7ac3b2a874.TABLE:postgres.SoftwareEngineeringBankSystem.transaction</node>
+    <node x="-179.74938749003746" y="209.8242751956466">6afd7624-cddb-4b78-b988-da7ac3b2a874.TABLE:postgres.SoftwareEngineeringBankSystem.users</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="6afd7624-cddb-4b78-b988-da7ac3b2a874.TABLE:postgres.SoftwareEngineeringBankSystem.user_accounts" target="6afd7624-cddb-4b78-b988-da7ac3b2a874.TABLE:postgres.SoftwareEngineeringBankSystem.account_types" relationship="REFERENCES">
+      <point x="40.5" y="-83.5" />
+      <point x="209.25" y="258.0" />
+      <point x="424.24779101037257" y="258.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="6afd7624-cddb-4b78-b988-da7ac3b2a874.TABLE:postgres.SoftwareEngineeringBankSystem.transaction" target="6afd7624-cddb-4b78-b988-da7ac3b2a874.TABLE:postgres.SoftwareEngineeringBankSystem.user_accounts" relationship="REFERENCES">
+      <point x="0.0" y="-61.0" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="6afd7624-cddb-4b78-b988-da7ac3b2a874.TABLE:postgres.SoftwareEngineeringBankSystem.user_accounts" target="6afd7624-cddb-4b78-b988-da7ac3b2a874.TABLE:postgres.SoftwareEngineeringBankSystem.users" relationship="REFERENCES">
+      <point x="-40.5" y="-83.5" />
+      <point x="128.25" y="258.0" />
+      <point x="-101.24938749003746" y="258.0" />
+      <point x="0.0" y="116.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.1109034267912772" showDependencies="false" x="190.89119461581606" y="407.8440830061694" />
+  <SelectedNodes>
+    <node>6afd7624-cddb-4b78-b988-da7ac3b2a874.TABLE:postgres.SoftwareEngineeringBankSystem.users</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
